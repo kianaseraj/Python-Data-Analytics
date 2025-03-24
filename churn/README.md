@@ -57,7 +57,7 @@ A. What customer behaviors are most associated with churn?
 
 B. Do service features like tech support or online backup impact churn?
 
-C. Which customer groups overpay compared to expected charges (charge_diff)?(tenuer segment with charge diff)
+C. Which customer groups pay more?
 
 D. Does the number of subscribed services (NumServices) correlate with retention?
 
@@ -72,7 +72,10 @@ A.
   <img src="pics/tenure_segment.jpg" alt="Tenure Segments" width="380" height="400">
 </p>
 
-
+C.
+<p align="center">
+  <img src="pics/monthly_charge_tenure_segment.jpg" alt="Tenure Segments vs Monthly Charges" width="380" height="400">
+  
 D.
 <p align="center">
   <img src="pics/num_services.jpg" alt="Number of Services vs Dependency" width="380" height="400">
