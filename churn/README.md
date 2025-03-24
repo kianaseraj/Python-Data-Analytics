@@ -159,10 +159,16 @@ A.
   <img src="pics/tenure_segment.jpg" alt="Tenure Segments" width="350" height="300">
 </p>
 
+B. 
+
+<p align="center">
+  <img src="pics/table.png" alt="services" width="320" height="250">
+  </p>
+
 C.
 <p align="center">
-  <img src="pics/monthly_charge_tenure_segment.jpg" alt="Tenure Segments vs Monthly Charges" width="380" height="400">
-  
+  <img src="pics/monthly_charge_tenure_segment.jpg" alt="Tenure Segments vs Monthly Charges" width="350" height="280">
+  </p>
 D.
 <p align="center">
   <img src="pics/num_services.jpg" alt="Number of Services vs Dependency" width="350" height="300">
@@ -173,7 +179,7 @@ E.
 <p align="center">
   <img src="pics/contract.jpg" alt="Contract vs Tenure" width="350" height="300">
   <img src="pics/payment.jpg" alt="Payment vs Tenure" width="380" height="350">
-  <img src="pics/payment.jpg" alt="Paper Billing vs Tenure" width="380" height="400">
+  <img src="pics/paperbilling.jpg" alt="Paper Billing vs Tenure" width="380" height="400">
 </p>
 
 F. 
