@@ -17,6 +17,10 @@ The dataset includes customer-level information across three key areas:
 
 In addition to these features, the dataset provides tenure, which indicates the number of months a customer has remained subscribed to the service.
 
+
+📎 SQL-based churn reporting for this dataset is available in my [SQL-Data-Analytics](https://github.com/kianaseraj/SQL-Data-Analytics-Report/tree/main/churn) repository.
+
+
 **🔍 Key Questions We Aim to Answer**
 
 A. What customer behaviors are most strongly associated with churn?
