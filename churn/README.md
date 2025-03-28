@@ -23,11 +23,11 @@ A. What customer behaviors are most strongly associated with churn?
 
 B. Do service features like tech support or online backup impact churn likelihood?
 
-C. Which customer groups overpay compared to expected charges (using charge_diff and tenure segments)?
+C. Which customer groups pay more?
 
 D. Does the number of subscribed services (NumServices) correlate with retention?
 
-E. What is the impact of billing methods on retention—specifically, contract types and payment methods?
+E. What is the impact of billing methods, contract type and payment methods on retention?
 
 F. Are there noticeable differences in churn rates between customers with and without dependents?
 
@@ -132,25 +132,8 @@ By analysing the services customers use their characteristics and billing inform
 The result shows that boosting techniques, which are non-paramteric, provide superior estimates. Also when the custoemr churn ate is lower it shows that logistic regression can be useful. In cases where churn is less, logistic rregressiion can be a good choice.
 
 
-
-
-
-
-
-
-
-A. What customer behaviors are most associated with churn?
-
-B. Do service features like tech support or online backup impact churn?
-
-C. Which customer groups pay more?
-
-D. Does the number of subscribed services (NumServices) correlate with retention?
-
-E. What is the impact of billing methods, contract type and payment methods on retention?
-
-F. Are there differences in churn rates between customers with and without dependents?
-
+## Answering questions with visualizations
+Note: In all graphs, salmon color indicates churned customers, and light blue represents retained customers.
 
 
 A. Loyal customers tend to churn less even though their charges increas.
