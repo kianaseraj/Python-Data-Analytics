@@ -68,7 +68,7 @@ We also performed correlation analysis to understand which variables have strong
 
 ⚖️ **Handling Class Imbalance**
 
-Since churned customers form a minority in the dataset, stratified sampling was applied to ensure class balance. For example, sampling was done in a way that the distribution of churn within age or other segments remained proportional across train/test sets.
+Since churned customers form a minority in the dataset, stratified sampling was applied to ensure class balance. Additionally, in algorithm level, class upweight and threshold tuning arer used.
 
 📊 **Exploratory Data Analysis (EDA)**
 
@@ -147,42 +147,70 @@ C. Which customer groups pay more?
 
 D. Does the number of subscribed services (NumServices) correlate with retention?
 
-E. What is the impact of billing methods on retention, contract type and payment methods
+E. What is the impact of billing methods, contract type and payment methods on retention?
 
 F. Are there differences in churn rates between customers with and without dependents?
 
 
 
-A.
+A. Loyal customers tend to churn less even though their charges increas.
 <p align="center">
   <img src="pics/tenure_monthly_charges.jpg" alt="Tenure vs Monthly Charges" width="350" height="280">
   <img src="pics/tenure_segment.jpg" alt="Tenure Segments" width="350" height="300">
 </p>
 
-B. 
+B. Customerrrs without tech supports and onliine security services tend to churn twice as people having the services.
 
 <p align="center">
   <img src="pics/table.png" alt="services" width="320" height="250">
   </p>
 
-C.
+C. loyal customers pay more.
 <p align="center">
   <img src="pics/monthly_charge_tenure_segment.jpg" alt="Tenure Segments vs Monthly Charges" width="350" height="280">
   </p>
-D.
+D. New customers tend to have less services than the loyal ones.
 <p align="center">
   <img src="pics/num_services.jpg" alt="Number of Services vs Dependency" width="350" height="300">
 </p>
 
 
-E. 
+E. Customers using paperless billing tend to churn twice as customers with paperbilling. Additionally, customers with electronic check payment and month-to-month contracts are prone to churn.
 <p align="center">
   <img src="pics/contract.jpg" alt="Contract vs Tenure" width="350" height="300">
   <img src="pics/payment.jpg" alt="Payment vs Tenure" width="380" height="350">
   <img src="pics/paperbilling.jpg" alt="Paper Billing vs Tenure" width="380" height="400">
 </p>
 
-F. 
+F. Single customers tend to churn more than twice of customers having family.
 <p align="center">
   <img src="pics/dependent.jpg" alt="Tenure vs Dependency" width="380" height="350">
 </p>
+
+
+## Model prediction
+In churn prediction, the goal is to identify customers who are likely to stop using the service. This task is especially sensitive to **false negatives** (missed churners), since losing a customer is often more costly than mistakenly targeting a loyal one.
+To reflect this, the modeling strategy prioritized **recall**, ensuring that the model catches as many potential churners as possible — even if it results in more false positives. In other words, it's better to mistakenly alert a few loyal customers than to miss actual churners.
+To address class imbalance, techniques such as **class weighting** and **threshold adjustment** (e.g., lowering the classification threshold to 0.45) were used.
+with the business objective.
+
+
+
+## 🧪 Evaluation Metrics
+
+The models were evaluated primarily using:
+
+- **Recall**: Priority metric — captures how well churners are detected
+- **Accuracy**: General performance across both classes
+- **F1-score**: Reported for completeness
+
+The model's performance was compared across multiple algorithms:
+
+| Model            | Recall | Accuracy | F1-score |
+|------------------|--------|----------|----------|
+| Neural Network   | 90%    | 75%      | 61%      |
+| Random Forest    | 84%    | 73%      | 61%      |
+| Gradient Boost.  | 83%    | 73%      | 62%      |
+| Logistic Reg.    | 82%    | 73%      | 62%      |
+| SVM              | 80%    | 75%      | 63%      |
+
