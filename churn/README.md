@@ -63,7 +63,7 @@ Billing behavior: including monthly charges and payment method
 
 Engineered features like NumServices and charge_diff were created to capture richer behavioral patterns
 
-We also performed correlation analysis to understand which variables have strong relationships with churn.
+Correlation test with numeric variables and Cramers' V with categorical variables to ignore less associate variables with the target variable.
 
 
 ⚖️ **Handling Class Imbalance**
