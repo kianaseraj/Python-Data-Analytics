@@ -5,7 +5,7 @@ This repository contains Python-based data analytics projects, each organized in
 
 ### Projects:
 
-- [Sales Analysis](./sales)  
+- [Churn Analysis](./churn)  
 
 
 > *Actively maintained — more Python based analysis projects will be added soon.*
