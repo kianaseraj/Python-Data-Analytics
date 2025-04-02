@@ -1,5 +1,11 @@
 # Python Data Analytics
-This repository contains data analytics projects organized into separate directories. Each project includes Python-based exploratory data analysis (EDA), data preprocessing, and machine learning workflows for prediction and insight generation.
-The repository will be actively maintained and regularly updated with new projects, improvements, and enhancements.
 
 
+This repository contains Python-based data analytics projects, each organized into its own directory. Projects include exploratory data analysis (EDA), data preprocessing, feature engineering, and machine learning workflows for prediction and insight generation.
+
+### Projects:
+
+- [Sales Analysis](./sales)  
+
+
+> *Actively maintained — more Python based analysis projects will be added soon.*
